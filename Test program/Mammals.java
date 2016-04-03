@@ -1,0 +1,4 @@
+interface Mammals
+{
+	void run();
+}

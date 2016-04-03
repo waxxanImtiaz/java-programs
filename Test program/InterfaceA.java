@@ -1,0 +1,4 @@
+interface InterfaceA
+{
+	void display();
+}

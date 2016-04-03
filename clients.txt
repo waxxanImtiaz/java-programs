@@ -1,0 +1,5 @@
+100 bob jones 24.98
+200 Steve Doe -345.67
+300 Pam White 0.00
+400 Sam Stone -42.16
+500 Su Tich 244.56

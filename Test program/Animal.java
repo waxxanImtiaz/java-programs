@@ -1,0 +1,4 @@
+interface Animal
+{
+	void set();
+}

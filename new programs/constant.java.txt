@@ -1,0 +1,110 @@
+class StringClassFunctions
+{
+	private String[] list;
+	
+	public StringClassFunctions( String[] getList )
+	{
+		list = new String[ getList.length ];
+		
+		list = getList;
+	}
+	
+	public void sortSeperate()
+	{
+		int i = 0;
+		
+		while( i<list.length )
+		{
+			list[i] = sortFunction( list[i] );
+			
+			i++;
+		}
+		
+	}
+	
+	public char[] sortFunction( char[] x )
+	{
+		char a;
+		
+		int i;
+		int j;
+		
+		for( i = 0; i<x.length; i++ )
+		{
+			a = x[i];
+			for( j = i+1; j<x.length; j++ )
+			{
+				if( a>x[j] )
+				{
+					x[i] = x[j];
+					x[j] = a;
+					a = x[i];
+				}
+			}
+			
+		}
+	
+		return x;
+	}
+	
+	public void sort()
+	{
+		String temp;
+		for( int i = 0; i<list.length; i++)
+		{
+			temp = list[i];
+			for( int j = i+1; j<list.length; j++)
+			{
+				if(temp.charAt(0)>list[j].charAt(0))
+				{
+					list[j] = list[j];
+					list[j] = temp;
+					temp = list[i];
+				}
+			}
+		}
+	}
+	
+	public void findString( String target )
+	{
+		boolean flag = false;
+		
+		int i = 0;
+		while( (i<list.length)&&(flag != true))
+			{
+				if(target.equalsIgnoreCase(list[i]))
+				{
+					flag = true;
+				}
+			}
+			
+			if( flag )
+			{
+				System.out.printf("%s found at index %d",target,i);
+			}
+			else
+			{
+				System.out.printf("%s not found",target);
+			}
+	}
+	public void startWith( String target )
+	{
+		int i = 0; 
+		boolean flag = false;
+		
+		while( (i<list.length)&&(flag != true) )
+		{
+			if( list[i].startsWith( target ) )
+			{
+				flag = true;
+			}
+		}
+		
+		if( flag )
+			System.out.printf( "%s starts with %s", list[i],target );
+		else
+			System.out.printf( "NO any string start with %s", target );
+		
+	}
+}//end of class StringClassFunctions.....
+

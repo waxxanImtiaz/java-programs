@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class n
+{
+   public static void main(String [] args)
+	{
+ 	 Array obj=new obj();
+	obj.print();
+	}
+}
+
+class Array
+{
+  private int[] array=new int[4];
+  public Scanner x
+	public void input()
+	{
+	for(int x=0; x<4; x++)
+	{
+	
+	}
+	}	
+}

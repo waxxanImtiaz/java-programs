@@ -1,0 +1,97 @@
+class StringFunctions
+{	
+	public String str;
+	
+	public StringFunctions()
+	{
+		str = null;
+	}
+	public StringFunctions( String str)
+	{
+		this.str = str;
+	}
+	
+	public int findIndexOf( char find )
+	{
+		int i=0;
+		while( i<str.length())
+		{
+			if( str.getChar(i)==find )
+				return i;
+				i++;
+		}
+		return 0;
+	}
+	
+	public boolean compareStrings( String target)
+	{
+				int i=0;
+				boolean flag = true;
+				while( (i<str.length()&(flag!=flase)) 
+				{
+					if(str.getChar( i )!=target.getChar( i ))
+						flag=false;
+					i++;
+				}
+				
+				return flag;
+	}//end of compareStrings method
+	
+	public int repeatingChar( char target )
+	{
+			int count=0;
+			
+			int loopCounter=1;
+			
+			
+			while( loopCounter<str.length())
+			{
+				if( str.getChar( loopCounter )==target)
+					count++;
+			}
+			
+			return count;
+			
+	}
+	
+	public boolean isUpperCase( char target )
+	{
+			if( ((target>=65&&(target<=90))
+			  return true;
+			  
+			  return false;
+	}
+	
+	public boolean isLowerCase( char target )
+	{
+	
+			if( (target>=97)&&(target<=122))
+			 return true;
+			 
+			 return false;
+	}
+	
+	public String checkAlpha( char target )
+	{
+			if( (target>=65)&& (target<=90) )
+				return (target+" is capital alphabatical latter.");
+				else
+					if( (target>=97)&&( target<=122 ) )
+					  return (target+" is small alphabatical latter.");
+						else
+							if( (target>=48)&&( target<=57 ) )
+								return (target+" is a number.");
+								else
+								   return (target+" is a special character.");
+					 
+					  
+	}
+	public boolean isDigit( char target )
+	{
+			if((target>=28)&&(target<=57))
+				return true;
+				return false;
+	}
+	
+	
+}

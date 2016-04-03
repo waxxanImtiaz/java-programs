@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class public_class
+{
+  public static void main(String [] args)
+	{
+	  
+	}
+}//endof father_class..
+
+class father_class
+{
+  //declaring data members	
+  private int number1;
+  private int number2;
+  public Scanner input=new Scanner(System.in); 
+   public father_class(int numb1, int numb2)
+	{
+	  number1=numb1;
+	  number2=numb2;
+	}
+   public void get()
+	{
+	 System.out.println("enter any two numbers:");
+         number1=input.nextInt();
+	 number2=input.nextInt();
+	}
+  public void diplay()
+	{
+	System.out.println("number1="+number1);
+	System.out.println("number2="+number2);
+	}		
+
+}
